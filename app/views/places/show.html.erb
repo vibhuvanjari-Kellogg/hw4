@@ -10,15 +10,15 @@
 <% end %>
 
 <p>
-  <a href="/entries/new?place_id=<%= @place["id"] %>">New Entry</a>
+  <a class="btn btn-primary" href="/entries/new?place_id=<%= @place["id"] %>" role="button">New Entry</a>
 </p>
 
 <p>
-  <a href="/places">Back to All Places</a>
+  <a class="btn btn-primary" href="/places" role="button">Back to All Places</a>
 </p>
 
 <% else %>
 
-<a href = "\login">Login to see this place.</a>
+<a href = "/login">Login to see this place.</a>
 
 <% end %>
