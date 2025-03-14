@@ -1,5 +1,7 @@
 <h1>Places</h1>
 
+<% if @user != nil%>
+
 <ul>
   <% for place in @places %>
     <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
@@ -9,3 +11,9 @@
 <p>
   <a href="/places/new">New place</a>
 </p>
+
+<% else %>
+
+<a href = "\login">Login to view places and add entries </a>
+
+<% end %>

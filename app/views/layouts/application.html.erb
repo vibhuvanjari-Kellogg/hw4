@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tacostagram Final</title>
+    <title>Places Final</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -26,6 +26,8 @@
       <% else %>
         <!-- else, if user logged-in, display username and logout link -->
         Welcome, <%= @user["username"] %>
+        |
+        user_id is <%= session["user_id"]%>
         |
         <a href="/logout">Logout</a>
       <% end %>
