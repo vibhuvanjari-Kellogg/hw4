@@ -27,8 +27,6 @@
         <!-- else, if user logged-in, display username and logout link -->
         Welcome, <%= @user["username"] %>
         |
-        user_id is <%= session["user_id"]%>
-        |
         <a href="/logout">Logout</a>
       <% end %>
 
