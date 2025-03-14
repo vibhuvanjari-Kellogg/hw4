@@ -14,13 +14,14 @@
   <% end %>
 <% end %>
 
-<p>
-  <a class="btn btn-primary" href="/entries/new?place_id=<%= @place["id"] %>" role="button">New Entry</a>
-</p>
-
-<p>
-  <a class="btn btn-primary" href="/places" role="button">Back to All Places</a>
-</p>
+<div class="grid gap-3">
+  <div class="p-2 g-col-6">
+     <a class="btn btn-primary" href="/entries/new?place_id=<%= @place["id"] %>" role="button">New Entry</a>
+  </div>
+  <div class="p-2 g-col-6">
+    <a class="btn btn-primary" href="/places" role="button">Back to All Places</a>
+  </div>
+</div>
 
 <% else %>
 
